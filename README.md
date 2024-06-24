@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository! This is my website where you can learn more about me, my skills, projects, and experiences. The website features an interactive and amazing UI/UX design, ensuring a seamless and engaging user experience. [Click to view](https://fabulous-chimera-8c858a.netlify.app/)
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](portfolio.gif)
 
 ## Features ✨
 
