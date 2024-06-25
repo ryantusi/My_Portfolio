@@ -17,6 +17,8 @@ Welcome to my personal portfolio repository! This is my website where you can le
 - **CSS:** Styling for the website.
 - **Sass:** Enhanced CSS with variables, mixins, and nesting for better maintainability.
 - **JavaScript:** Interactivity and dynamic elements of the website.
+- **Ajax:** Framework for smooth interactivity
+- **Jquery:** Framework for dynamic elements
 
 ## Contributing 🤝
 
