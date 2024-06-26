@@ -1326,98 +1326,88 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/map.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
-}
-
-.contact--lockup {
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .contact--lockup {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     width: 900px;
     max-width: 75%;
     height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
-    margin: 0 auto
-}
-
-@media (max-width: 1180px) {
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1180px) {
     .contact--lockup {
-        max-width: 90%
+      max-width: 90%;
     }
-}
-
-@media (max-width: 767px) {
+  }
+  
+  @media (max-width: 767px) {
     .contact--lockup {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center
+      justify-content: center;
     }
-}
-
-.contact--lockup .modal {
+  }
+  
+  .contact--lockup .modal {
     padding: 45px 45px;
     text-align: center;
     background-color: #0c0c0c;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75)
-}
-
-.contact--lockup .modal--information p, .contact--lockup .modal--information a {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
+    z-index: 1;
+  }
+  
+  .contact--lockup .modal--information p,
+  .contact--lockup .modal--information a {
     display: block;
     margin: 14px 0;
     text-decoration: none;
     color: #fff;
-    font-weight: 700
-}
-
-.contact--lockup .modal--information p {
-    margin-top: 0
-}
-
-.contact--lockup .modal--options {
+    font-weight: 700;
+  }
+  
+  .contact--lockup .modal--information p {
+    margin-top: 0;
+  }
+  
+  .contact--lockup .modal--options {
     margin: 0;
     padding: 0;
-    list-style: none
-}
-
-.contact--lockup .modal--options>li {
+    list-style: none;
+  }
+  
+  .contact--lockup .modal--options>li {
     width: 130px;
-    margin: 0 auto 25px auto
-}
-
-.contact--lockup .modal--options li:nth-child(1) {
-    background-color: #1769ff
-}
-
-.contact--lockup .modal--options li:nth-child(2) {
-    background-color: #ea4c89
-}
-
-.contact--lockup .modal--options li:nth-child(3) {
+    margin: 0 auto 25px auto;
+  }
+  
+  .contact--lockup .modal--options li:nth-child(1) {
+    background-color: #1769ff;
+  }
+  
+  .contact--lockup .modal--options li:nth-child(2) {
+    background-color: #ea4c89;
+  }
+  
+  .contact--lockup .modal--options li:nth-child(3) {
     margin-bottom: 0;
-    background-color: hwb(108 0% 0%);
-}
-
-.contact--lockup .modal--options a {
+    background-color: #25D366;
+  }
+  
+  .contact--lockup .modal--options a {
     display: block;
     width: 100%;
     padding: 8px 0;
     text-decoration: none;
     color: #fff;
-    font-weight: 700
-}
+    font-weight: 700;
+  }
 
 .hire {
     position: relative;

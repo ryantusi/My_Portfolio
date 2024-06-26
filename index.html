@@ -191,6 +191,12 @@
           <li class="l-section section">
             <div class="contact">
               <div class="contact--lockup">
+                <canvas
+                  id="cobe"
+                  style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;"
+                  width="1000"
+                  height="1000"
+                ></canvas>
                 <div class="modal">
                   <div class="modal--information">
                     <p>India - Canada - Dubai</p>
@@ -327,6 +333,40 @@
           const whatsappUrl = `https://api.whatsapp.com/send?phone=+917397496792&text=${whatsappMessage}`;
           window.open(whatsappUrl);
       });
+  });
+</script>
+<script type="module">
+  import createGlobe from 'https://cdn.skypack.dev/cobe';
+
+  let phi = 0;
+  let canvas = document.getElementById("cobe");
+
+  const globe = createGlobe(canvas, {
+    devicePixelRatio: 2,
+    width: 1000,
+    height: 1000,
+    phi: 0,  // Initial value of phi (longitude rotation)
+    theta: 0,  // Initial value of theta (latitude tilt)
+    dark: 1,  // Dark mode
+    diffuse: 1.2,
+    scale: 1,
+    mapSamples: 16000,
+    mapBrightness: 6,  // Adjusted to make the map visible
+    baseColor: [0.5, 0.5, 0.5],  // Slightly brighter base color to enhance visibility
+    markerColor: [0.0588, 0.2, 1],
+    glowColor: [1, 1, 1],
+    offset: [0, 0],
+    markers: [
+      { location: [13.0827, 80.2707], size: 0.1 },  // Chennai
+      { location: [25.2048, 55.2708], size: 0.05 },  // Dubai
+      { location: [43.65107, -79.347015], size: 0.1 },  // Toronto
+    ],
+    onRender: (state) => {
+      // Called on every animation frame.
+      // `state` will be an empty object, return updated params.
+      state.phi = phi;  // Update the phi value for each frame
+      phi += 0.01;  // Increment phi to create rotation
+    },
   });
 </script>
 </body>
