@@ -37,5 +37,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact 📬
 
 - Ryan Tusi: [LinkedIn](https://www.linkedin.com/in/ryantusi/)
-- Portfolio Website: [Ryan's Website](https://fabulous-chimera-8c858a.netlify.app/)
+- Portfolio Website: [Ryan's Website](https://ryantusi.netlify.app/)
 
