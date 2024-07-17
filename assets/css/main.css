@@ -1211,7 +1211,8 @@ body {
     border: 10px solid #0f33ff;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    cursor: default;
 }
 
 .about--options>a:nth-child(1) {
@@ -1235,7 +1236,7 @@ body {
 }
 
 .about--options>a:hover h3 {
-    bottom: -50px
+    bottom: -50px;
 }
 
 .about--options h3 {
@@ -1354,7 +1355,15 @@ body {
       justify-content: center;
     }
   }
-  
+
+  .contact--lockup canvas {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: -50px; 
+    left: 0; 
+  }
+
   .contact--lockup .modal {
     padding: 45px 45px;
     text-align: center;
@@ -1370,6 +1379,11 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  .contact--lockup .modal--information a:hover {
+    color: #0f33ff;
   }
   
   .contact--lockup .modal--information p {
@@ -1385,10 +1399,12 @@ body {
   .contact--lockup .modal--options>li {
     width: 130px;
     margin: 0 auto 25px auto;
+    transition: background-color 0.3s ease;
   }
   
   .contact--lockup .modal--options li:nth-child(1) {
     background-color: #1769ff;
+    transition: color 0.3s ease;
   }
   
   .contact--lockup .modal--options li:nth-child(2) {
@@ -1399,6 +1415,10 @@ body {
     margin-bottom: 0;
     background-color: #25D366;
   }
+
+  .contact--lockup .modal--options>li:hover, .contact--lockup .modal--options li:nth-child(1):hover {
+    background-color: #0c0c0c;
+  }
   
   .contact--lockup .modal--options a {
     display: block;
@@ -1407,7 +1427,21 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
+    transition: color 0.3s ease;
   }
+
+  .contact--lockup .modal--options li:nth-child(1) a:hover {
+    color: #1769ff;
+  } 
+
+  .contact--lockup .modal--options li:nth-child(2) a:hover {
+    color: #ea4c89;
+  } 
+
+  .contact--lockup .modal--options li:nth-child(3) a:hover {
+    color: #25D366;
+  } 
+
 
 .hire {
     position: relative;
@@ -1469,7 +1503,8 @@ body {
     text-transform: uppercase;
     background-color: #0f33ff;
     border: none;
-    border-radius: 0
+    border-radius: 0;
+    transition: background-color 0.3s ease;
 }
 
 .work-request input[type="submit"]:focus {
@@ -1545,6 +1580,11 @@ body {
 
 .work-request--options input[type="checkbox"] {
     display: none
+}
+
+.work-request--options label:hover {
+    background-color: #0f33ff;
+    border-color: #0f33ff;
 }
 
 .work-request--options input[type="checkbox"]:checked+label {
